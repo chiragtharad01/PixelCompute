@@ -1,0 +1,41 @@
+body{
+    background-color: #6B98E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 60px;
+}
+.container{
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 30 20 gray;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+.container div{
+    background-color: white;
+}
+.container div:nth-child(even):nth-child(-n+8),
+.container div:nth-child(odd):nth-child(n+9):nth-child(-n+16),
+.container div:nth-child(even):nth-child(n+17):nth-child(-n+24),
+.container div:nth-child(odd):nth-child(n+25):nth-child(-n+32),
+.container div:nth-child(even):nth-child(n+33):nth-child(-n+40),
+.container div:nth-child(odd):nth-child(n+41):nth-child(-n+48),
+.container div:nth-child(even):nth-child(n+49):nth-child(-n+56),
+.container div:nth-child(odd):nth-child(n+57)
+{
+    background-color: gray;
+}
