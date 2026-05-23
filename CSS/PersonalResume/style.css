@@ -1,0 +1,229 @@
+body{
+    background-color: #0E161C;
+}
+.main{
+    display: flex;
+    gap: 50px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #0E161C;
+    width: 20%;
+    align-items: center;
+    gap: 50px;
+}
+.profile-container{
+    display: flex;
+    width: 50%;
+    gap:20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #0c2f3d;
+}
+.profile-container img{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.profile-container h2{
+     color: white;
+    font-size: 2cqw;
+    margin:0px;
+} 
+.profile-container p{
+     color: white;
+    font-size: 1.5cqw;
+    margin:0px;
+}
+.section-list{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.section-list a{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    height: 30px;
+    text-decoration: none;
+    width: 100%;
+    background-color: #0c2f3d;
+}
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-list img{
+    height: 50px;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #0E161C;
+    height: 100%;
+}
+.header{
+    margin-top: 50px;
+}
+.header p:first-child{
+    color: #829467;
+    font-size: 2cqw;
+}
+.header h1{
+    font-size: 5cqw;
+    color: white;
+}
+.header p:last-child{
+    font-size: 2cqw;
+    color: rgb(198,208,211)
+}
+.section{
+    width: 63%;
+    align-items: left;
+    margin-bottom: 30px;
+}
+.section h3{
+    color: white;
+    font-size: 2cqw;
+}
+.project-card{
+    display: flex;
+    background-color: #0c2f3d;
+    gap: 5%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 25%;
+    min-height: 70px;
+}
+.project-card img{
+    height: 25%;
+    width: 25%;
+    border-radius: 20px 0 0 20px;
+    min-height: 70px;
+}
+.project-card h4{
+    font-size: 2cqw;
+    color: white;
+    margin: 0px 0px;
+    margin-top: 10px;
+}
+.project-card p{
+    font-size: 1.5cqw;
+    color: rgb(198,208,211);
+    margin: 0px 0px;
+}
+.project-card a{
+    font-size: 1.5cqw;
+    color: #829467;
+    margin: 0px 0px;
+    margin-bottom: 10px;
+}
+.project-card a:hover{
+    text-decoration: underline;
+}
+.project-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+.project-card-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-card-button button{
+    background-color: transparent;
+    border: solid 1px #c5c5a5;
+    border-radius: 5px;
+    color: #c5c5a5;
+    padding: 5px 10px;
+}
+
+.writing-container{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.writing-card{
+    width: 50%;
+    border-radius: 10px;
+    background-color: #0c2f3d;
+    height: 30%;
+    min-height: 70px;
+    padding: 0 0 20px 0px;
+}
+.writing-card img{
+    width: 90%;
+    margin: 5% 5%;
+}
+.writing-card h4{
+    font-size: 2cqw;
+    color: white;
+    margin: 0px 0px;
+    margin-top: 10px;
+    margin: 0 0 5px 5%;
+}
+.writing-card p{
+    font-size: 1.5cqw;
+    color: rgb(198,208,211);
+    margin: 0px 0px;
+    margin: 0 0 5px 5%;
+}
+.writing-card a{
+    font-size: 1.5cqw;
+    color: #829467;
+    margin: 0px 0px;
+    margin-bottom: 10px;
+    margin: 0 0 100px 5%;
+}
+.get-in-touch h3{
+    margin-bottom: 10px;
+}
+.get-in-touch p{
+    color: white;
+    font-size: 1.5cqw;
+}
+.get-in-touch button{
+    /* background-color: transparent;
+    border: solid 1px #c5c5a5;
+    border-radius: 5px;
+    color: #c5c5a5; */
+    padding: 10px 20px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+.footer h4{
+    font-size: 2cqw;
+    color: #829467;
+    margin: 0px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.links a{
+    font-size: 1.5cqw;
+    text-decoration: underline;
+    color: #829467;
+}
