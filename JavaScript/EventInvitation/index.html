@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Create an Event Invite</h1>
+            <form onsubmit="validate(event)">
+                <label for="event-name">Event Name</label>
+                <input type="text" id="event-name" name="event-name" placeholder="Kerala JS Meetup">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date">
+                <label for="start-time">Start Time</label>
+                <input type="time" id="start-time" name="start-time" >
+                <label for="end-time">End Time</label>
+                <input type="time" id="end-time" name="end-time" >
+                <label for="event-description">Event Description</label>
+                <textarea name="event-desrciption" id="event-description" rows="2" cols="20" placeholder="Brief description of the event"></textarea>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Location of the event">
+                <button id="button" type="submit">Create Event</button>
+            </form>
+        </div>
+    </div>
+    <div id="error-field">
+        <img src="./images/close.png" onclick="remove()">
+        <p>Please fill in all fields</p>
+    </div>
+
+    <!-- Invitation Section -->
+     <div id="invitation-section">
+        <div class="heading-content">
+            <h1>YOU ARE INVITED</h1>
+            <h3>TO JOIN THE</h3>
+            <h2 id="eventName">gfdgfd</h2>
+
+        </div>
+        <div class="info-content">
+            <p id="date">fg</p>
+            <p id="time">gfd</p>
+            <p id="loc">gfd</p>
+            <p id="description">gfdg</p>
+        </div>
+     </div>
+    <script src="./script.js"></script>
+</body>
+</html>
