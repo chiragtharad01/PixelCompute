@@ -1,0 +1,99 @@
+body{
+    background-color: tomato;
+}
+h1{
+    color: white;
+    text-decoration: underline lightcoral;
+    font-size: 40px;
+    margin: 0px;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    height: 100vh;
+}
+.game-grid{
+    display: grid;
+    width: 35%;
+    min-width: 350px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+
+}
+.grid-item{
+    border: 1px solid white;
+    aspect-ratio: 1 / 1;
+}
+#reset-button{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightpink;
+}
+.rules-container{
+    color: white;
+    width: 35%;
+    min-width: 350px;
+    margin: 0px;
+}
+.rules-container h3{
+    font-size: 25px;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+.rules-container ol{
+    margin: 0px;
+}
+.rules-container li{
+    font-size: 20px;
+}
+.grid-item img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+
+}
+.main-outcome-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+.outcome-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+}
+.outcome-container h2{
+    color: black;
+    margin: 0;
+}
+.outcome-container button{
+    background-color: blue;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
