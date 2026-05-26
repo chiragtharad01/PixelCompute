@@ -1,0 +1,69 @@
+body{
+    background-image: url('./images/flat-mountains.png');
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h1{
+    margin: 0;
+    margin-top: 20px;
+    color: white;
+    font-size: 60px;
+    font-weight: 200;
+}
+.game-grid{
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(3,100px);
+    gap: 15px;
+}
+.grid-item{
+    height: 100px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+button{
+    background-color: #4AAF4E;
+    padding: 10px 20px;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    border:none;
+    z-index: 1000;
+}
+.color{
+    background-color: lightgreen;
+}
+.outcome{
+    margin: 0px;
+    color: white;
+    font-size: 30px;
+}
+.outcome h3{
+    margin: 0px;
+    padding: 0px;
+}
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+}
+/* 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M528 320C528 205.1 434.9 112 320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320z"/></svg> */
