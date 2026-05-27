@@ -1,0 +1,142 @@
+body{
+    background-image: url("./Images/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    box-sizing: border-box;
+}
+.alert{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    border: none;
+    margin: 0;
+    z-index: 100;
+}
+#copy-alert{
+    background-color: #4CAF50;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;;
+}
+#options-alert{
+    background-color: #e74c3c;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+}
+.container{
+    width: 60%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 50px;
+}
+.password-generator-container{
+    background-color:  rgba(255,255,255, 0.8);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.input-copy-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    min-width: 380px;
+    width: 95%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    min-width: 380px;
+    padding: 20px 0px;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#copy-btn{
+    background-color: #4CAF50;
+    min-width: 126px;
+}
+#copy-btn:hover{
+    background-color: #45a049;
+}
+#generated-password{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    width: 80%;
+}
+.checkbox-container{
+    justify-content: space-around;
+    margin: 0px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.checkbox-con{
+    min-width: fit-content;
+    /* max-width: fit-content; */
+}
+.info-section-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.info-section{
+    width: 385px;
+    margin: 0;
+    padding: 0;
+}
+.info-section ul{
+    list-style: none;
+    padding: 0px;
+}
+.info-section li{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#section2 li{
+    margin-bottom: 15px;
+}
+@media screen and (max-width:970px){
+    .checkbox-con{
+        /* justify-content: flex-start; */
+        width: 165px;
+    }
+}@media screen and (max-width:1284px){
+    .info-section-container{
+        justify-content: center;
+    }
+}

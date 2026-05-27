@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="password-generator-container">
+            <h1>Password Generator</h1>
+            <p id="copy-alert" class="alert">Password copied to clipboard!</p>
+            <div class="input-copy-container">
+                <input type="text" id="generated-password">
+                <button id="copy-btn" class="alert">Copy Password</button>
+            </div>
+            <form onchange="generatePassword()">
+                <div class="flex">
+                    <label for="slider">Use the slider and select options to lengthen your password and strengthen your security. Password length (6-64)</label>
+                </div>
+                <div class="flex pass-length-container">
+                    <label for="password-length">Total Character</label>
+                    <input type="range" min="6" max="64" value="9" id="set-password-length" oninput="this.nextElementSibling.textContent = this.value">
+                    <p id="password-length">9</p>
+                </div>
+                <div class="checkbox-container flex">
+                    <div class="checkbox-con">
+                        <input type="checkbox" id="number" name="type" checked>
+                        <label for="number">Include Numbers</label>
+                    </div>
+                    <div class="checkbox-con">
+                        <input type="checkbox" id="letter" name="type" checked>
+                        <label for="letter">Include Letters</label>
+                    </div>
+                    <div class="checkbox-con">
+                        <input type="checkbox" id="mixed" name="type" checked>
+                        <label for="mixed">Include Mixed Case</label>
+                    </div>
+                    <div class="checkbox-con">
+                        <input type="checkbox" id="punctuation" name="type" checked>
+                        <label for="punctuation">Include Punctuation</label>
+                    </div>
+                </div>
+                <p id="options-alert" class="alert">Please select atleast one checkbox to generate the password</p>
+    
+            </form>
+        </div>
+        <div class="info-section-container">
+            <div class="info-section section-1">
+                <h3>Do you use any of these weak passwords?</h3>
+                <ul>
+                    <li>Password</li>
+                    <li>123456</li>
+                    <li>Qwerty</li>
+                    <li>Your name</li>
+                </ul>
+            </div>
+            <div class="info-section section-2" id="section-2">
+                <h3>Why those passwords are weak?</h3>
+                <ul>
+                    <li>They're easy to guess or crack</li>
+                    <li>If one of your logins is compromised, a hacker can access all your services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
