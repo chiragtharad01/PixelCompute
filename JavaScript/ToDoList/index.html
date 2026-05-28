@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="outer">
+
+        <div class="container">
+            <div class="heading-section">
+                <h1>To-Do List</h1>
+                <input type="text" placeholder="Search tasks..." id="search-input">
+            </div>
+            <!-- <div class="search-section">
+            </div> -->
+    
+            <div class="input-section">
+                <input type="text" placeholder="Add your task here" id="task-input">
+                <input type="date" id="date-input">
+                <input type="time" id="time-input">
+                <button id="add-task-btn">Add Task</button>
+            </div>
+            <div class="to-do-list-container">
+                <div id="due-tasks-container" class="hidden">
+                    <h2>Due Tasks</h2>
+                    <div id="due-tasks-section" class="task-section"></div>
+                </div>
+                <div id="today-tasks-section" class="task-section"></div>
+                <div id="upcoming-tasks-container" class="hidden">
+                    <h2>Upcoming Tasks</h2>
+                    <div id="upcoming-tasks-section" class="task-section"></div>
+                </div>
+            </div>
+        </div>
+        <div class="update-section hidden">
+            <h3></h3>
+            <input type="text" id="task-input-update">
+        </div>
+        <div class="alert-section hidden">
+            <button id="close-btn">×</button>
+            <p>Please fill in all fields</p>
+            <button id="ok-btn">OK</button>
+        </div>
+        <div class="overlay-section hidden">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

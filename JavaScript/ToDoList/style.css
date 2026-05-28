@@ -1,0 +1,225 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f7f8fc;
+    
+}
+.outer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+.heading-section{
+    width: 100%;
+    background-color: #3f51b5;;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+.input-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+    gap: 8px;
+    border-radius: 10px;
+    padding: 15px 0px;
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+.input-section input{
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+
+#search-input{
+    height: 40px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.hidden{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}
+.to-do-list-container{
+    background-color: white;
+    color: #333;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    background-color: white;
+    /* border: 1px solid #ccc; */
+    color: #333;
+}
+#add-task-btn{
+    background-color: #4caf50;
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 7.5px 15px;
+}
+#add-task-btn:hover{
+    background-color: #388e3c;
+}
+.btn-container{
+    display: flex;
+    gap: 7.5px;
+    margin: 0;
+    padding: 0;
+}
+.ctn-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+}
+.ctn-btn-container{
+    font-size: 20px;
+}
+.task-div h3{
+    margin: 0;
+}
+.edit-btn{
+    background-color: #ffca28;
+    color: #333;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 7.5px 15px;
+}
+.edit-btn:hover{
+    background-color: #fbc02d;
+}
+.delete-btn{
+    background-color: #f44336;
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 7.5px 15px;
+}
+.delete-btn:hover{
+    background-color: #d32f2f;
+}
+h2{
+    color: #3f51b5;
+}
+.update-section{
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px lightgray;
+    box-sizing:border-box;
+    padding: 10px ;
+}
+.update-section input{
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.alert-section{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    z-index: 100;
+}
+#ok-btn{
+    background-color: #4caf50;
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 7.5px 15px;
+}
+#close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.overlay-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(80, 80, 80, 0.4);
+    position: fixed;
+    z-index: 10;
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: 90%;
+    }
+    .update-section{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 95%;
+    }
+    .input-section{
+        flex-wrap: wrap;
+    }
+    .update-section{
+        width: 95%;
+    }
+}
